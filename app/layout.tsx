@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Providers } from "./provider";
 
 
 const inter = Inter({
@@ -29,7 +30,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${inter.variable} ${poppins.variable} antialiased`}>
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-					{children}
+					<Providers>{children}</Providers>
 				</ThemeProvider>
 			</body>
 		</html>
