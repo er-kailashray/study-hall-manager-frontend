@@ -30,7 +30,6 @@ export default function LoginPage() {
 		register,
 		handleSubmit,
 		formState: { errors },
-		reset,
 		watch,
 	} = useForm<FormData>({ resolver: zodResolver(loginSchema) });
 
@@ -43,9 +42,7 @@ export default function LoginPage() {
 	const watchedPassword = watch("password");
 
 	useEffect(() => {
-		if (apiError) {
-			setApiError(null);
-		}
+		 setApiError(null);
 	}, [watchedEmail, watchedPassword]);
 
 	const onSubmit: SubmitHandler<FormData> = async (requestData) => {
