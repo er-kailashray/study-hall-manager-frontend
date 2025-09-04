@@ -141,7 +141,7 @@ export default function LoginPage() {
 					<p className="text-accent-foreground text-center text-sm">
 						Don&apos;t have an account?
 						<Button asChild variant="link" className="px-2">
-							<Link href="#">Create account</Link>
+							<Link href="/auth/register">Create account</Link>
 						</Button>
 					</p>
 				</div>
