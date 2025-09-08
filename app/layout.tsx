@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Providers } from "./provider";
 
 import { AppSidebar } from "@/components/app-sidebar"
 import {
@@ -60,6 +61,7 @@ export default function RootLayout({
 							{children}
 						</SidebarInset>
 					</SidebarProvider>
+					<Providers>{children}</Providers>
 				</ThemeProvider>
 			</body>
 		</html>
