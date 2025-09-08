@@ -6,6 +6,7 @@ import { Input } from '../ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
 import { useRouter } from "next/navigation";
 
+
 // ---------- Types ----------
 export type AutoBatchRow = {
     batch: string;
